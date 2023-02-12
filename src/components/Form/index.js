@@ -11,7 +11,8 @@ export default function Form() {
   const [textButton, setTextButton] = useState("Calcular");
 
   const calculatorIMC = () => {
-    return setImc((weight / (heith * heith)).toFixed(2));
+    setImc((weight / (heith * heith)).toFixed(2));
+    return;
   };
 
   const validationImc = () => {
